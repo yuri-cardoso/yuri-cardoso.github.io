@@ -1,0 +1,88 @@
+{
+  "badges": [
+    {
+      "name": "Networking Basics",
+      "issuer": "Cisco",
+      "image_url": "images/badges/networking-basics.png",
+      "assertion_url": "https://www.credly.com/badges/d297ac19-2784-4881-840d-a0e1de9481f7/public_url"
+    },
+    {
+      "name": "Introduction to Cybersecurity",
+      "issuer": "Cisco",
+      "image_url": "images/badges/introduction-to-cybersecurity.png",
+      "assertion_url": "https://www.credly.com/badges/ac0a9a61-656a-4b8e-84f6-be3689bc8710/public_url"
+    },
+    {
+      "name": "Enterprise Design Thinking - Team Essentials for AI",
+      "issuer": "IBM",
+      "image_url": "images/badges/enterprise-design-thinking-team-essentials-for-ai.png",
+      "assertion_url": "https://www.credly.com/badges/6b8ce40e-53c2-4c62-83b0-1a2e45568ddc/public_url"
+    },
+    {
+      "name": "IBM Garage Essentials",
+      "issuer": "IBM",
+      "image_url": "images/badges/ibm-garage-essentials.png",
+      "assertion_url": "https://www.credly.com/badges/6b8715fa-687f-4d3d-a009-2ed2fcc6961c/public_url"
+    },
+    {
+      "name": "Enterprise Design Thinking Practitioner",
+      "issuer": "IBM",
+      "image_url": "images/badges/enterprise-design-thinking-practitioner.png",
+      "assertion_url": "https://www.credly.com/badges/03745dda-f8eb-427d-b2f4-5251c49f12d6/public_url"
+    },
+    {
+      "name": "IBM Recognized Speaker/Presenter",
+      "issuer": "IBM",
+      "image_url": "images/badges/ibm-recognized-speaker-presenter.png",
+      "assertion_url": "https://www.credly.com/badges/9be4bdf2-8410-4180-9a53-2165bbafa7fe/public_url"
+    },
+    {
+      "name": "Job Application Essentials",
+      "issuer": "IBM",
+      "image_url": "images/badges/job-application-essentials.png",
+      "assertion_url": "https://www.credly.com/badges/9d0815a0-b8b1-4e02-a54c-e4b36499e010/public_url"
+    },
+    {
+      "name": "Working in a Digital World: Professional Skills",
+      "issuer": "IBM",
+      "image_url": "images/badges/working-in-a-digital-world-professional-skills.png",
+      "assertion_url": "https://www.credly.com/badges/9665e201-5081-4378-be73-35c56dc7d88f/public_url"
+    },
+    {
+      "name": "IBM Cloud Essentials",
+      "issuer": "IBM",
+      "image_url": "images/badges/ibm-cloud-essentials.2.png",
+      "assertion_url": "https://www.credly.com/badges/fc7a2a82-3e78-40f9-94a8-b79c2f65090e/public_url"
+    },
+    {
+      "name": "Data Privacy Fundamentals",
+      "issuer": "IBM",
+      "image_url": "images/badges/data-privacy-fundamentals.png",
+      "assertion_url": "https://www.credly.com/badges/c71f7122-5858-4c7b-a42d-13267cac1efe/public_url"
+    },
+    {
+      "name": "Data Science Foundations - Level 2 (V2)",
+      "issuer": "IBM",
+      "image_url": "images/badges/data-science-foundations-level-2-v2.png",
+      "assertion_url": "https://www.credly.com/badges/549ce860-3a1e-4fee-bda4-dfe3c0e1dc62/public_url"
+    },
+    {
+      "name": "Data Science Methodologies",
+      "issuer": "IBM",
+      "image_url": "images/badges/data-science-methodologies.png",
+      "assertion_url": "https://www.credly.com/badges/6dc4ed2a-d326-4024-9c52-2d598c7d5693/public_url"
+    },
+    {
+      "name": "Data Science Tools",
+      "issuer": "IBM",
+      "image_url": "images/badges/data-science-tools.png",
+      "assertion_url": "https://www.credly.com/badges/aa300843-9561-417c-8ff9-fe521f9d9d48/public_url"
+    },
+    {
+      "name": "Data Science Foundations - Level 1",
+      "issuer": "IBM",
+      "image_url": "images/badges/data-science-foundations-level-1.png",
+      "assertion_url": "https://www.credly.com/badges/71ec4eaf-e573-4a4c-9203-abd725b8211f/public_url"
+    }
+  ]
+}
