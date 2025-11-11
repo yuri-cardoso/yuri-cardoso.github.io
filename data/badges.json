@@ -13,6 +13,12 @@
       "assertion_url": "https://www.credly.com/badges/ac0a9a61-656a-4b8e-84f6-be3689bc8710/public_url"
     },
     {
+      "name": "IA Para Todos",
+      "issuer": "IBM",
+      "image_url": "images/badges/ia-para-todos.png",
+      "assertion_url": "https://lp.startse.com/ia-para-todos/?gad_campaignid=22887823191"
+    },
+    {
       "name": "Enterprise Design Thinking - Team Essentials for AI",
       "issuer": "IBM",
       "image_url": "images/badges/enterprise-design-thinking-team-essentials-for-ai.png",
