@@ -20,8 +20,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact for Pages
-        # Atualizado para v2 para evitar dependência de versões depreciadas de actions/upload-artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./
 
