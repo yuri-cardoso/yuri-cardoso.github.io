@@ -1,4 +1,4 @@
-# yuriCardoso.github.io
+# yuri-cardoso.github.io
 
 Site estático de portfólio / currículo pessoal (HTML/CSS/JS). Projeto simples sem bundlers — arquivos estáticos estão na raiz, estilos em `css/`, scripts em `js/` e imagens em `images/`.
 
