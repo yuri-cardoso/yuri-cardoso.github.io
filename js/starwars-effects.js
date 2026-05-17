@@ -247,6 +247,27 @@
           720: { items: 3 }
         }
       });
+
+      function restartCarousel() {
+        $carousel.trigger('play.owl.autoplay', [1800]);
+      }
+
+      /* Reinicia ao voltar para a aba do browser */
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) restartCarousel();
+      });
+
+      /* Reinicia ao navegar de volta para a seção Home */
+      var homeSection = document.querySelector('.pt-page[data-id="home"]');
+      if (homeSection) {
+        new MutationObserver(function (mutations) {
+          mutations.forEach(function (m) {
+            if (m.attributeName === 'class' && homeSection.classList.contains('pt-page-current')) {
+              setTimeout(restartCarousel, 350);
+            }
+          });
+        }).observe(homeSection, { attributes: true });
+      }
     }, 400);
   }
 
