@@ -399,17 +399,46 @@
     });
   }
 
+  /* =====================================================
+     Proteção de conteúdo — dificulta cópia casual
+  ===================================================== */
+  function initCopyProtection() {
+    /* Bloqueia menu de contexto (botão direito) */
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+
+    /* Bloqueia atalhos de teclado: Ctrl+U (fonte), Ctrl+S (salvar),
+       Ctrl+A (selecionar tudo), Ctrl+P (imprimir) */
+    document.addEventListener('keydown', function (e) {
+      var ctrl = e.ctrlKey || e.metaKey;
+      if (ctrl && (e.key === 'u' || e.key === 'U' ||
+                   e.key === 's' || e.key === 'S' ||
+                   e.key === 'a' || e.key === 'A' ||
+                   e.key === 'p' || e.key === 'P')) {
+        e.preventDefault();
+      }
+    });
+
+    /* Impede arrastar imagens */
+    document.addEventListener('dragstart', function (e) {
+      if (e.target.tagName === 'IMG') e.preventDefault();
+    });
+  }
+
   /* Aguarda o DOM estar pronto */
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       init();
       initProfileLightbox();
       initTextRotation();
+      initCopyProtection();
     });
   } else {
     init();
     initProfileLightbox();
     initTextRotation();
+    initCopyProtection();
   }
 
 }());
