@@ -1,0 +1,870 @@
+/*
+ * Star Wars — Lado Sith (Dark Side) Theme
+ * Paleta: Vermelho Sith atenuado + fundo espacial
+ * Font: Orbitron (sci-fi/imperial)
+ *
+ * Cores:
+ *   Acento:    #8b1111  (vermelho Sith atenuado)
+ *   Brilho:    #aa2222
+ *   Hover:     #993333
+ *   Fundo:     #040000
+ *   Card:      rgba(10, 0, 0, 0.88)
+ *   Borda:     #2a0808
+ *   Texto:     #e8d8d8
+ *   Muted:     #8a6060
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap");
+
+/* =====================
+   Geral
+===================== */
+body {
+  background-color: #040000;
+  background-image:
+    linear-gradient(rgba(4, 0, 0, 0.68), rgba(4, 0, 0, 0.68)),
+    url('../images/starwars-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #e8d8d8;
+}
+
+a {
+  color: #8b1111;
+}
+
+a:hover {
+  color: #aa2222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e8d8d8;
+  font-family: 'Orbitron', 'Montserrat', Helvetica, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* =====================
+   Preloader
+===================== */
+.preloader {
+  background: #040000;
+}
+
+.preloader-spinner:after {
+  border-top-color: #8b1111;
+}
+
+/* =====================
+   Header / Navegação
+===================== */
+
+/* Remove "Meu Perfil Resumido" e alinha o menu à esquerda */
+.site-title-block {
+  display: none !important;
+}
+
+.site-nav {
+  float: left;
+}
+
+@media only screen and (min-width: 991px) {
+  .header.sticked {
+    background-color: rgba(6, 0, 0, 0.95);
+    box-shadow: 0px 3px 12px 0px rgba(139, 17, 17, 0.2);
+  }
+}
+
+.site-title {
+  color: #e8d8d8;
+}
+
+.site-title span {
+  color: #8b1111;
+  text-shadow: 0 0 10px rgba(139, 17, 17, 0.5);
+}
+
+.site-main-menu li a,
+.site-main-menu li a:hover {
+  color: #b89090;
+}
+
+.site-main-menu li a:after {
+  background-color: #8b1111;
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    background-color: rgba(6, 0, 0, 0.97);
+    box-shadow: none;
+  }
+
+  .mobile-header {
+    background-color: rgba(6, 0, 0, 0.97);
+  }
+
+  .mobile-site-title {
+    color: #e8d8d8;
+  }
+
+  .menu-toggle i {
+    color: #8b1111;
+  }
+
+  .site-main-menu li a,
+  .site-main-menu li a:hover {
+    color: #e8d8d8;
+  }
+
+  .site-main-menu li.active a:after,
+  .site-main-menu li a:hover:after {
+    background-color: #8b1111;
+  }
+}
+
+/* =====================
+   Cards / Section Inner
+===================== */
+.pt-page .section-inner {
+  background-color: rgba(10, 0, 0, 0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0px 15px 35px 0px rgba(139, 17, 17, 0.1);
+  border: 1px solid #2a0808;
+}
+
+.pt-page .section-inner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #8b1111, transparent);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* =====================
+   Carrossel de subtítulos — multi-item horizontal
+===================== */
+.text-rotation {
+  width: 100%;
+}
+
+.text-rotation .sp-subtitle {
+  font-size: 14px;
+  text-align: center;
+  padding: 4px 10px;
+  border-left: 2px solid rgba(139, 17, 17, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-rotation .owl-item:first-child .sp-subtitle {
+  border-left: none;
+}
+
+/* =====================
+   Home
+===================== */
+.start-page-content .page-header {
+  background-color: rgba(6, 0, 0, 0.82);
+  background-image: none;
+  border-bottom: 2px solid #8b1111;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.start-page-content .page-header .title-block h1 {
+  color: #e8d8d8;
+  text-shadow: 0 0 16px rgba(139, 17, 17, 0.4);
+}
+
+.start-page-content .page-header .title-block .sp-subtitle {
+  color: #8b1111;
+  text-shadow: 0 0 8px rgba(139, 17, 17, 0.35);
+}
+
+.start-page-content .page-header .photo {
+  border-color: #8b1111;
+  box-shadow: 0 0 16px rgba(139, 17, 17, 0.35), 0 0 40px rgba(139, 17, 17, 0.12);
+}
+
+.start-page-content .page-content {
+  background-color: transparent;
+}
+
+.info-list li .value {
+  color: #8a6060;
+}
+
+/* =====================
+   Cabeçalhos Internos
+===================== */
+.custom-page-content .page-header {
+  background-color: rgba(6, 0, 0, 0.82);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.custom-page-content .page-header.color-1 {
+  background-color: rgba(6, 0, 0, 0.82);
+  background-image: none;
+  border-bottom: 2px solid #8b1111;
+}
+
+.custom-page-content .page-header.color-1 h2,
+.custom-page-content .page-header.color-2 h2,
+.custom-page-content .page-header.color-3 h2,
+.custom-page-content .page-header.color-4 h2 {
+  color: #aa2222 !important;
+  text-shadow: 0 0 20px rgba(139, 17, 17, 0.45);
+}
+
+.custom-page-content .page-content {
+  background-color: transparent;
+}
+
+/* =====================
+   Títulos de Bloco
+===================== */
+.block-title h3 {
+  color: #e8d8d8;
+}
+
+.block-title h3 span {
+  color: #8b1111;
+}
+
+/* =====================
+   Timeline (Currículo)
+===================== */
+.timeline {
+  border-left-color: #2a0808;
+}
+
+.timeline-item {
+  background-color: rgba(8, 0, 0, 0.85);
+  border-left-color: #8b1111;
+  box-shadow: 0px 0px 4px 0px rgba(139, 17, 17, 0.12);
+}
+
+.timeline-item:hover {
+  box-shadow: 0px 0px 12px 0px rgba(139, 17, 17, 0.25);
+}
+
+.timeline-item:before {
+  background-color: #0a0000;
+  border-color: #8b1111;
+  box-shadow: 0 0 5px rgba(139, 17, 17, 0.4);
+}
+
+.timeline-item:after {
+  background-color: #8b1111;
+}
+
+.timeline-item .item-title {
+  color: #e8d8d8;
+}
+
+.timeline-item .item-period {
+  color: #aa2222;
+}
+
+.timeline-item .item-small {
+  color: #8a6060;
+  border-left-color: #2a0808;
+}
+
+.timeline-item .item-description {
+  color: #b89090;
+}
+
+/* =====================
+   Habilidades (Skills)
+===================== */
+.skills-info h4 {
+  color: #e8d8d8;
+}
+
+.skill-container {
+  background-color: rgba(10, 0, 0, 0.7);
+  border-color: #2a0808;
+}
+
+.skill-percentage,
+.skill-percentage.skill-1,
+.skill-percentage.skill-2,
+.skill-percentage.skill-3,
+.skill-percentage.skill-4,
+.skill-percentage.skill-5,
+.skill-percentage.skill-6,
+.skill-percentage.skill-7,
+.skill-percentage.skill-8 {
+  background: linear-gradient(90deg, #5a0505 0%, #8b1111 65%, #aa2222 100%);
+  box-shadow: 0 0 8px rgba(139, 17, 17, 0.4);
+}
+
+/* =====================
+   Botões
+===================== */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+button, input[type="button"], input[type="submit"] {
+  background-color: #8b1111;
+  color: #e8d8d8;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3), 0 2px 6px rgba(139, 17, 17, 0.3);
+}
+
+.btn-primary:hover,
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+  background-color: #aa2222;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 4px 12px rgba(139, 17, 17, 0.4);
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: rgba(20, 0, 0, 0.8);
+  color: #e8d8d8;
+  border: 1px solid #3a0c0c;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.btn-secondary:hover {
+  border-color: #8b1111;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 4px 8px rgba(139, 17, 17, 0.2);
+}
+
+/* =====================
+   Formulários
+===================== */
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus {
+  color: #e8d8d8;
+  border-bottom-color: #3a0c0c;
+  background: transparent;
+}
+
+.form-control + .form-control-border {
+  background: #8b1111;
+}
+
+.form-group label {
+  color: #8a6060;
+}
+
+.form-group .help-block {
+  color: #cc3333;
+  background: #0a0000;
+}
+
+.form-group .help-block:after {
+  border-bottom-color: #0a0000;
+}
+
+.form-group-with-icon i {
+  color: #8a6060;
+  background-color: rgba(10, 0, 0, 0.7);
+  border-bottom-color: #2a0808;
+}
+
+.form-group-with-icon.form-group-focus i {
+  color: #8b1111;
+}
+
+/* =====================
+   Portfólio
+===================== */
+.portfolio-filters li a,
+.portfolio-filters li a:hover {
+  color: #8a6060;
+}
+
+.portfolio-filters li a:hover {
+  background-color: rgba(30, 0, 0, 0.6);
+  color: #e8d8d8;
+}
+
+.portfolio-filters li.active a,
+.portfolio-filters li.active a:hover {
+  background-color: #8b1111;
+  color: #e8d8d8;
+}
+
+.portfolio-grid figure a div:before {
+  background-color: rgba(120, 10, 10, 0.82);
+}
+
+.portfolio-grid figure:nth-child(even) a div:before {
+  background-color: rgba(60, 0, 0, 0.88);
+}
+
+/* =====================
+   Serviços
+===================== */
+.service-image {
+  background-color: rgba(10, 0, 0, 0.7);
+  border: 1px solid #2a0808;
+}
+
+.service-block h4 {
+  color: #e8d8d8;
+}
+
+.service-block p {
+  color: #b89090;
+}
+
+.service-icon {
+  background-color: #8b1111;
+  color: #e8d8d8;
+  box-shadow: 0 0 12px rgba(139, 17, 17, 0.3);
+}
+
+/* =====================
+   Clientes
+===================== */
+.client-block {
+  opacity: 0.3;
+}
+
+.client-block:hover {
+  opacity: 0.8;
+}
+
+/* =====================
+   Depoimentos
+===================== */
+.testimonial-content .testimonial-text {
+  border-color: #2a0808;
+  border-top-color: #8b1111;
+  background-color: rgba(8, 0, 0, 0.8);
+  color: #b89090;
+}
+
+.testimonial-author {
+  color: #e8d8d8;
+}
+
+.testimonial-firm {
+  color: #8a6060;
+}
+
+.testimonial-picture {
+  background-color: rgba(10, 0, 0, 0.8);
+}
+
+/* =====================
+   Badges (Certificações)
+===================== */
+.badge-item {
+  background: rgba(8, 0, 0, 0.8);
+  border: 1px solid #2a0808;
+}
+
+.badge-item:hover {
+  box-shadow: 0 5px 16px rgba(139, 17, 17, 0.2);
+  border-color: #8b1111;
+}
+
+.badge-name {
+  color: #e8d8d8;
+}
+
+.badge-issuer {
+  color: #8a6060;
+}
+
+.badges-loading {
+  color: #8a6060;
+}
+
+/* =====================
+   Footer
+===================== */
+body > footer .copyrights {
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'Orbitron', 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* =====================
+   Carousel Nav
+===================== */
+.testimonials.owl-carousel .owl-nav .owl-prev,
+.testimonials.owl-carousel .owl-nav .owl-next {
+  color: #e8d8d8;
+  background-color: rgba(20, 0, 0, 0.8);
+  border: 1px solid #2a0808;
+}
+
+.testimonials.owl-carousel .owl-nav .owl-prev:hover,
+.testimonials.owl-carousel .owl-nav .owl-next:hover {
+  color: #e8d8d8;
+  background-color: #8b1111;
+  border-color: #8b1111;
+}
+
+/* =====================
+   Contato
+===================== */
+.contact-info-block .ci-icon {
+  background-color: rgba(10, 0, 0, 0.8);
+  border: 1px solid #2a0808;
+}
+
+.contact-info-block i {
+  color: #8b1111;
+}
+
+/* =====================
+   Blog Cards
+===================== */
+.blog-card {
+  background: rgba(10, 0, 0, 0.85);
+  border: 1px solid #2a0808;
+}
+
+.blog-card .post-date span {
+  color: #8b1111;
+}
+
+/* =====================
+   Ajax Page
+===================== */
+.page-ajax-loaded,
+.ajax-page-content {
+  background-color: rgba(10, 0, 0, 0.95);
+  color: #e8d8d8;
+}
+
+.ajax-page-nav > div.nav-item a {
+  background-color: rgba(10, 0, 0, 0.8);
+  color: #8a6060;
+  border: 1px solid #2a0808;
+}
+
+.ajax-page-nav > div.nav-item a:hover {
+  color: #8b1111;
+}
+
+/* =====================
+   Tags
+===================== */
+.tags li a {
+  color: #b89090;
+  background-color: rgba(20, 0, 0, 0.7);
+  border: 1px solid #2a0808;
+}
+
+/* =====================
+   Info projeto
+===================== */
+.project-general-info .fa {
+  color: #8b1111;
+}
+
+/* =====================
+   Fun Facts
+===================== */
+.fun-fact-block {
+  background: rgba(10, 0, 0, 0.8);
+  border: 1px solid #2a0808;
+}
+
+.fun-fact-block .fun-value {
+  color: #8b1111;
+}
+
+/* =====================
+   Share Buttons
+===================== */
+.share-buttons a {
+  color: #8a6060;
+  background-color: rgba(10, 0, 0, 0.8);
+  border-color: #2a0808;
+}
+
+.share-buttons a:hover {
+  color: #e8d8d8;
+  background-color: #8b1111;
+  border-color: #8b1111;
+}
+
+/* =====================
+   Blockquote
+===================== */
+blockquote {
+  border-left-color: #8b1111;
+}
+
+/* =====================
+   Pricing
+===================== */
+.lm-pricing .lm-package {
+  border-color: #2a0808;
+  background-color: rgba(10, 0, 0, 0.8);
+}
+
+.lm-pricing .lm-package-wrap.highlight-col .lm-heading-row span:after {
+  background-color: #8b1111;
+}
+
+/* =====================
+   Bordas utilitárias
+===================== */
+.border-top {
+  border-top-color: #8b1111;
+}
+
+.border-bottom {
+  border-bottom-color: #8b1111;
+}
+
+/* =====================
+   Social links
+===================== */
+.start-page-content .social-links a {
+  background-color: rgba(20, 0, 0, 0.85);
+  border: 1px solid #3a0c0c;
+  box-shadow: 0 0 6px rgba(139, 17, 17, 0.15);
+}
+
+.start-page-content .social-links a:hover {
+  box-shadow: 0 0 14px rgba(139, 17, 17, 0.4);
+  border-color: #8b1111;
+}
+
+/* =====================
+   Single Page Content
+===================== */
+.single-page-content .content-area {
+  background-color: rgba(10, 0, 0, 0.88);
+  border: 1px solid #2a0808;
+  box-shadow: 0px 15px 25px 0px rgba(139, 17, 17, 0.08);
+}
+
+/* =====================
+   Scrollbar
+===================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a0c0c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b1111;
+}
+
+/* =====================
+   Seleção de texto
+===================== */
+::selection {
+  background: #8b1111;
+  color: #e8d8d8;
+}
+
+/* =====================
+   Largura da página — mais larga
+===================== */
+.pt-page {
+  max-width: 1380px;
+}
+
+.header .header-content {
+  max-width: 1380px;
+}
+
+.single-page-content .content-area {
+  max-width: 1380px;
+}
+
+@media only screen and (max-width: 1380px) {
+  .header .header-content {
+    margin: 0 20px;
+  }
+  .pt-page {
+    margin: 0 20px;
+    width: auto;
+  }
+}
+
+/* =====================
+   Foto de perfil — corrigir overflow + lightbox
+===================== */
+.start-page-content .page-header .photo a.profile-lightbox {
+  display: block;
+  cursor: zoom-in;
+}
+
+.start-page-content .page-header .photo a.profile-lightbox img {
+  transition: opacity 0.2s ease;
+}
+
+.start-page-content .page-header .photo a.profile-lightbox:hover img {
+  opacity: 0.85;
+}
+
+.start-page-content .page-header .photo {
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 0;        /* remove o -75px do template que vazava para fora */
+  max-width: 220px;
+}
+
+.start-page-content .page-header .photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Ajusta o conteúdo abaixo que antes recebia a foto sobreposta */
+.start-page-content .page-content {
+  padding-top: 30px;
+}
+
+.info-list {
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 10px;
+  display: table;
+}
+
+/* =====================
+   Animação — Corte de Sabre de Luz
+===================== */
+#lightsaber-slash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9997;
+  overflow: hidden;
+}
+
+/* Escurecimento geral durante a transição */
+#lightsaber-slash::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(4, 0, 0, 0.35);
+  animation: saber-dark 0.62s ease-out forwards;
+}
+
+/* A lâmina do sabre cortando a tela */
+#lightsaber-slash::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -25%;
+  width: 50%;
+  height: 300%;
+  background: linear-gradient(90deg,
+    transparent           0%,
+    rgba(100,10,10,0.04)  30%,
+    rgba(160,20,20,0.35)  44%,
+    rgba(220,40,40,0.85)  48.5%,
+    rgba(255,180,180,1)   50%,
+    rgba(220,40,40,0.85)  51.5%,
+    rgba(160,20,20,0.35)  56%,
+    rgba(100,10,10,0.04)  70%,
+    transparent           100%
+  );
+  transform: rotate(-12deg);
+  filter: blur(1px);
+  box-shadow:
+    0 0 25px rgba(200, 0, 0, 0.7),
+    0 0 60px rgba(200, 0, 0, 0.3),
+    0 0 120px rgba(200, 0, 0, 0.1);
+  animation: saber-sweep 0.52s cubic-bezier(0.2, 0.6, 0.4, 1) forwards;
+}
+
+@keyframes saber-sweep {
+  0%   { left: -50%; opacity: 0; }
+  8%   { opacity: 1; }
+  100% { left: 130%;  opacity: 0.6; }
+}
+
+@keyframes saber-dark {
+  0%   { opacity: 0; }
+  15%  { opacity: 1; }
+  75%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* =====================
+   Banner — Em Construção (Serviços)
+===================== */
+.em-construcao-banner {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.em-construcao-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #8b1111;
+  border-radius: 8px;
+  padding: 36px 56px;
+  background: rgba(10, 0, 0, 0.75);
+  box-shadow:
+    0 0 30px rgba(139, 17, 17, 0.25),
+    inset 0 0 20px rgba(139, 17, 17, 0.06);
+  text-align: center;
+  animation: construcao-pulse 3s ease-in-out infinite;
+}
+
+.em-construcao-icon {
+  font-size: 3.2rem;
+  line-height: 1;
+  color: #cc3333;
+  text-shadow: 0 0 18px rgba(200, 40, 40, 0.7);
+}
+
+.em-construcao-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #e8d8d8;
+  letter-spacing: 0.1em;
+  text-shadow:
+    0 0 12px rgba(200, 40, 40, 0.5),
+    0 0 30px rgba(200, 40, 40, 0.2);
+}
+
+.em-construcao-sub {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  color: #8a6060;
+  letter-spacing: 0.06em;
+}
+
+@keyframes construcao-pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(139,17,17,0.25), inset 0 0 20px rgba(139,17,17,0.06); }
+  50%       { box-shadow: 0 0 50px rgba(139,17,17,0.45), inset 0 0 30px rgba(139,17,17,0.12); }
+}

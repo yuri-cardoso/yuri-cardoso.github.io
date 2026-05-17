@@ -13,6 +13,12 @@
       "assertion_url": "https://www.credly.com/badges/ac0a9a61-656a-4b8e-84f6-be3689bc8710/public_url"
     },
     {
+      "name": "Cibersegurança 2",
+      "issuer": "Santander Bootcamp",
+      "image_url": "images/badges/ciberseguranca2.png",
+      "assertion_url": "#"
+    },
+    {
       "name": "IA Para Todos",
       "issuer": "IBM",
       "image_url": "images/badges/ia-para-todos.png",
